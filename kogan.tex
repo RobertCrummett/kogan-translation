@@ -1,0 +1,184 @@
+\input font_century.tex
+%
+\baselineskip=12pt
+%
+{\bf PREFACE}
+
+Since the second edition of the book {\it Fundamentals of Gamma Spectrometry of Natural Environments\/} (1976), the intensive application of this method for studying artificial and natural radioactivity in the environment has continued.
+The search for mineral deposits in geology; the identification of areas contaminated by experimental nuclear explosions and the activities of industrial enterprises in radioecology and environmental protection; the study of radioactivity in the planets of the Solar System in astronautics; and the investigation of water resources over large areas in hydrology.
+This is an incomplete list of applications developed in the USSR for field gamma spectrometry of natural environments.
+
+If from the late 1950's to the early 1970's the development of theoretical foundations and practical applications was primarily the result of the work of Soviet scientists, in subsequent years gamma spectrometry of natural environments found widespread use in other countries (USA, Canada, Japan).
+This was partly facilitated by the publication abroad in English in 1971 of the first edition of this monograph.
+For pioneering achievements in the development of gamma spectrometry of natural environments and its widespread use in the national economy, a group of scientists, including the authors of this book, was awarded the USSR State Prize in 1979.
+
+This third edition has been fundamentally revised, taking into account the latest advances in the field of gamma spectrometry of natural environments and publications on this topic in the scientific literature.
+
+In the third edition, chapters on radionuclides, their gamma radiation, the interaction of gamma radiation with matter, the search for mineral deposits, the determination of water content in snow cover, soil moisture, and the measurement of the radionuclide composition of planets have been omitted, as there are now specialized monographs, reference literature, etc., on all these topics.
+The derivations of most formulas have also been omitted, as the reader can find them in the earlier editions of the book or in original articles.
+Usually, only the initial assumptions and final expressions are provided.
+At the same time, the book has been significantly supplemented with original material.
+It includes the results of calculations of the gamma field in a homogeneous medium, an approximate analytical method for calculating the gamma radiation spectrum in natural environments, as well as new experimental and calculated data on the structure and variations of the gamma field in the near-surface atmosphere.
+Detailed characteristics of external radiation across practically the entire territory of the USSR are provided, resulting from global fallout of $^{137}$Cs, natural radioactivity, and cosmic radiation.
+Maps of the spatial distribution of $^{137}$Cs contamination density, the content of U, Th, K in rocks, and Rn in the air, as well as the dose rate of gamma radiation caused by these radionuclides, were obtained as a result of airborne and ground-based gamma-spectral surveys conducted across the country.
+
+Special attention is given to the control of radioactive contamination from nuclear power plants and atomic industry enterprises using gamma spectrometry methods, as well as to studies related to the identification of contamination resulting from the Chernobyl nuclear power plant accident.
+
+The authors thank S.D. Abramovskaya and L.A. Prokhorova for their assistance in preparing the manuscript for publication.
+
+\hfill{\it The Authors}
+\vfill
+\eject
+
+{\bf CONVENTIONAL SYMBOLS}
+
+$E$ --- energy of a gamma quantum
+
+$E_0$ --- energy of an unscattered gamma quantum
+
+$\mu$ --- total linear attenuation coefficient of gamma radiation
+
+$q$ --- specific activity of a volumetric source; radionuclide content
+
+$A$ --- specific activity of a surface source; surface density of radioactive contamination
+
+ The following functions describe gamma-ray fluxes:
+
+$I(t,r,E,\Omega)$ --- space-time energy-angular density of the gamma quantum flux
+
+$I(t,E)$ --- space-energy density of the gamma quantum flux; when $t={\rm const}$, this represents the spectrum of gamma quanta
+
+$I(r)$ --- spatial density of the gamma quantum flux; when $t={\rm const}$, this represents the flux density of gamma quanta
+
+$J(t,r,E,\Omega)=EI(t,r,E,\Omega)$ --- space-time energy-angular density of the gamma-ray energy flux
+
+$J(t,E)=EI(t,E)$ --- space-energy density of the gamma-ray energy flux
+
+$J(r)=EI(r)$ --- spatial density of the gamma-ray energy flux; when $t={\rm const}$, this represents the flux density of gamma-ray energy
+
+ Additional notations:
+
+$D$ --- gamma radiation dose
+
+$P$ --- dose power of gamma radiation
+
+$N$ --- number of registered gamma quanta over time $t$
+
+$N(E)$ --- number of registered gamma quanta with energy $E$ over time $t$
+
+$n=N/t,\quad n(E)=N(E)/t$ --- count rate
+
+%
+% TODO: verify units
+%
+ Unit conversions:
+
+1 Ki $=3.7\cdot10^{10}$ Bq
+
+1 Bq $=2.7\cdot10^{-11}$ Ki
+
+1 rad $=10^{-2}$ Gy
+
+1 Gy $=10^2$ rad
+\vfill
+\eject
+%
+{\bf Chapter 1. STRUCTURE OF THE GAMMA FIELD}
+
+{\bf 1.1 CHARACTERISTICS AND UNITS OF THE FIELD. STATISTICAL FLUCTUATIONS}
+
+The gamma radiation field is usually described in terms of flux quantities.
+The field is defined by the distribution of gamma quantum fluxes in energy, space, and time.
+Fluxes are random variables because gamma quanta are created and annihilated as a result of random events: the decay of atoms, the interaction of quanta with the medium through which they propagate.
+Each elementary act of such processes is random.
+Although all these random processes can be rigorously described, in practice, the description is limited to the behavior of average flux values, and an estimate of their possible fluctuations is provided.
+
+The most detailed information about the gamma field is given by the spatio-temporal energy-angular flux density of gamma quanta 
+$I(r,t,E,\Omega)$ [1].
+This function represents the number of quanta with energy $E$, moving within a unit solid angle in the direction of the unit vector $\Omega$, and crossing a unit area placed at point $r$ in space at time $t$ per unit time interval, where the normal to the area coincides with the direction of $\Omega$.
+Accordingly, the number of quanta with energy in the interval from $E$ to $E+dE$, within the solid angle $d\Omega$, crossing the area $dS$ over the time interval $dt$, is equal to $I(r,t,E,\Omega)\,dE\,d\Omega\,dt\,dS$.
+The spatio-temporal energy-angular flux density function is usually expressed in units of $1/({\rm m}^2\cdot{\rm s}\cdot{\rm MeV}\cdot{\rm sr})={\rm m}^{-2}\cdot{\rm s}^{-1}\cdot{\rm MeV}^{-1}\cdot{\rm sr}^{-1}$.
+This unit corresponds to the density of a uniform flux in which one quantum (with energy $E$) passes through a surface of area $1/{\rm m}^2$ (placed at point $r$ in space), perpendicular to the flux (the normal to this surface coincides with the direction of $\Omega$), in 1~s (at time $t$), within an energy interval of 1~MeV, moving within a solid angle of 1~sr (in the specified direction $\Omega$).
+
+In some applied problems of gamma spectrometry, it is necessary to know not the flux of the number of gamma quanta but the flux of energy carried by these quanta.
+In this case, the field is described by the spatio-temporal energy-angular density of the energy flux of quanta $J(r,t,E,\Omega)=EI(r,t,E,\Omega)$.
+Its unit is ${\rm MeV}/({\rm m}^2\cdot{\rm s}\cdot{\rm MeV}\cdot{\rm sr})$.
+
+In general, the quantities $I(r,t,E,\Omega)$ and $J(r,t,E,\Omega$ depend on seven variables: three spatial coordinates defining the position of the radius vector $r$, two angles characterizing the direction of the unit vector $\Omega$, energy, and time. In applied problems of gamma spectrometry the number of variables is usually reduced due to symmetry in the distribution of radiation sources and absorbing media, and the possibility of considering, as a rule, only stationary problems.
+The function $I(r,E,\Omega)$ is calle the energy-angular flux density of gamma quanta, and the function $J(r,E,\Omega)$ is called the spatial energy-angular flux density of the energy of gamma quanta.
+
+In applied problems of gamma spectrometry of natural environments, measurements are often made using an isotropic detector, which registers quanta arriving from all possible directions with equal efficiency. The number of such gamma quanta with energy $E$ is determined by the function
+$$I(r,e)=\int_{4\pi}I(r,E,\Omega)d\Omega,\eqno(1.1)$$
+representing the spatial-energy flux density of quanta.
+Its unit is $1/({\rm m^2}\cdot{\rm s}\cdot{\rm MeV})$.
+Similarly, the function $J(r,E)$ is defined.
+These functions, for a fixed point in space $r$, are called the energy spectra of gamma radiation in terms of the flux density of quanta and the flux density of the energy of quanta, respectively [1].
+For simplicity, in the following text, when it is clear which function is being referred to, the term energy spectrum of gamma radiation is used.
+
+The spatial flux density of gamma quanta is
+$$I(r)=\int_0^\infty I(r,E)dE.\eqno(1.2)$$
+For a fixed point in space $r$, $I(r)$ is called the flux density of gamma quanta.
+It determines the total number of quanta registered by the detector.
+The spatial flux density of the energy of gamma quanta $J(r)$ is defined similarly to (1.2) and, for a fixed $r$, is called the flux density of the energy of gamma quanta.
+
+Let us introduce the function $J(r,t,E,\Omega)=\Omega J(r,t,E,\Omega)$, representing the spatio-temporal energy-angular flux density of the energy current of gamma quanta.
+This function, in magnitude, coincides with $J(r,t,E,\Omega)$,
+but is a vector coinciding with the direction of propogation of the quanta $\Omega$.
+Let us express the absorbed dose of gamma radiation (the dose of gamma radiation) through it. The dose of gamma radiation is the absorbed energy of gamma quanta per unit mass of the irradiated substance. It is determined by external and internal sources of gamma radiation relative to the given volume [1, 2]:
+$$D=E_k-{1\over\rho}{\rm div}J,\eqno(1.3)$$
+where $E_k$ is the energy from internal sources released during the irratiation time; $\rho$ is the density.
+For most problems of gamma spectrometry of natural environments, $E_k=0$.
+
+%
+% TODO: Check units.
+%
+The unit of absorbed dose is the gray (1 Gy $=$ 1 J$/$kg).
+The absorbed dose rate (dose rate) is defined as
+$$P={dD\over dt},\eqno(1.4)$$
+and its unit is gray per second (Gy$/$s).
+
+In a real gamma field, the average values of the flux densities and doses discussed above are subject to statistical fluctuations.
+It can be shown [3, 4] that in typical cases for gamma spectrometry, the deviation from the average number of quanta $n$, arriving at a given point in space $r$ where the detector is located, regardless of the energy range, angles, and time, follows a Poisson distribution with parameter $I$.
+Thus the standard deviation is $\sqrt{I}$.
+
+{\bf 1.2. GAMMA FIELD OF UNSCATTERED (PRIMARY) QUANTA}
+
+Primary gamma quanta are of particular importance for solving applied problems in gamma spectrometry.
+Direct gamma radiation is used to identify the radionuclide composition of radioactive sources; in semiconductor gamma spectrometry and partially in scintillation spectrometry, the concentration of radionuclides is determined.
+
+Calculations of the direct gamma radiation field of extended bodies reduce to integrating the analytical expression of the flux density from a point source, and for symmetric cases, the results can generally also be presented in analytical form.
+
+The flux density of unscattered gamma quanta from an isotropic point source emitting monoenergetic gamma quanta is given by the following expression:
+$$I={q\over4\pi r^2}\exp\left(-\int_0^r\mu(r)dr\right),\eqno(1.5)$$
+where $q$ is the source activity --- the number of gamma quanta emitted per unit time; $r$ is the distance from the observation point to the source; and $\mu(r)$ is the total attenuation coefficient of the primary radiation.
+
+In formula (1.5), the term $1/4\pi r^2$ accounts for the attenuation of radiation due to the geometric factor, and the exponential term accounts for the attenuation due to the interaction of gamma quanta with the medium.
+
+For remote gamma spectrometry of natural environments, the following two schemes of mutual arrangement of sources and absorbing media are typical:
+
+1.~The source and observation point are located in a medium with constant density and compositino, for which the gamma radiation attenuation coefficient $\mu={\rm const}$.
+This is the case of measuring the gamma field in the atmosphere from sources located in the air, or measuring the field in rock from sources located within it, or measurements on the Earth's surface from sources located either in the air or in the rock.
+
+2.~There is one or more planar boundaries of the absorbing medium; the source and the observation point are located on opposite sides of this boundary.
+In this case, the values of the linear attenuation coefficient of gamma radiation $\mu=\mu(z)$, where $z$ is the normal to the boundary.
+This scheme corresponds to measuring the gamma field in the atmosphere from sources located in rocks or on the Earth's surface but covered by a layer of snow, etc.
+Sources can be located symmetrically or asymmetrically relative to the observation point.
+In practice, there are many cases where such symmetry exists.
+This allows for simple analytical expressions that are convenient for engineering calculations.
+
+{\bf 1.2.1. Gamma Field of Bodies with Axial Symmetry}
+
+Consider a disk with a constant surface density $A$, in units of quanta$/({\rm m^2}\cdot{\rm s})$.
+Let us determine the flux density of prumary quanta at a point located on the axis of the disk at a height $h=h_1+h_2$ above its plane, where $h_1$ and $h_2$ are the thickness of the absorbing layers with attenuation coefficients $\mu_1$ and $\mu_2$ (Fig.~1.1).
+To do this, according to (1.5), we nee to write the flux density from an element of the disk's area $ds=xdxd\phi$ and integrate it over the variables $x$ from 0 to $h/\tan(\theta)$ and $\phi$ from 0 to 2$\pi$.
+The result can be presented in analytical form (see, for example, [3]):
+$$I={A\over2}\left[\delta_1(\mu h)-\delta_1\left({\mu h\over\cos(\theta)}\right)\right],\eqno(1.6)$$
+where $\delta_1(\mu h)$ is the first-order exponential integral function; $\theta$ is the half-angle subtended by the disk from the observation point; and $\mu=(\mu_1h_1+\mu_2h_2)/(h_1+h_2)$ is the weighted average value of the attenuation coeffient.
+
+The expression for the flux density from a planar source (radioactive film) can be obtained with $\theta=\pi/2$:
+$$I={A\over2}\delta_1(\mu h).\eqno(1.7)$$
+When registering direct radiation from a planar source with a shielded isotropic detector that registers quanta within the half-angle $\theta$, the expression for the flux density from the disk (1.6) is valid [3].
+
+By integrating (1.6), expressions for the flux densities from bodies with volumetric source distributions can be obtained, represented as
+
+\bye
